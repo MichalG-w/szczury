@@ -69,7 +69,7 @@ namespace szczury
             string tester = ReadFileToString();
             if (tester == string.Empty)
                 return tester;
-            char[] punctuationMarks = { '!', '?', '.', ':', ';', ',', '-', '[', ']', '{', '}', '(', ')', '\'', '\"' };
+            char[] punctuationMarks = { '.', '?' };
             int result = tester.ToCharArray().Count(c => (punctuationMarks.Contains(c)));
             return "Number of punctuation marks: " + result + textIndendation;
 
